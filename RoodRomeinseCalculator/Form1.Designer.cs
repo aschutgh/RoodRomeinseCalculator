@@ -44,7 +44,7 @@
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(238, 25);
+            this.buttonAdd.Location = new System.Drawing.Point(471, 25);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(90, 51);
             this.buttonAdd.TabIndex = 0;
@@ -55,7 +55,7 @@
             // buttonSubtract
             // 
             this.buttonSubtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSubtract.Location = new System.Drawing.Point(238, 102);
+            this.buttonSubtract.Location = new System.Drawing.Point(471, 102);
             this.buttonSubtract.Name = "buttonSubtract";
             this.buttonSubtract.Size = new System.Drawing.Size(90, 51);
             this.buttonSubtract.TabIndex = 1;
@@ -66,7 +66,7 @@
             // buttonMultiply
             // 
             this.buttonMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMultiply.Location = new System.Drawing.Point(238, 175);
+            this.buttonMultiply.Location = new System.Drawing.Point(471, 175);
             this.buttonMultiply.Name = "buttonMultiply";
             this.buttonMultiply.Size = new System.Drawing.Size(90, 51);
             this.buttonMultiply.TabIndex = 2;
@@ -77,7 +77,7 @@
             // buttonDivide
             // 
             this.buttonDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDivide.Location = new System.Drawing.Point(238, 245);
+            this.buttonDivide.Location = new System.Drawing.Point(471, 245);
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(90, 51);
             this.buttonDivide.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.romeinsGetal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.romeinsGetal1.Location = new System.Drawing.Point(37, 80);
             this.romeinsGetal1.Name = "romeinsGetal1";
-            this.romeinsGetal1.Size = new System.Drawing.Size(166, 29);
+            this.romeinsGetal1.Size = new System.Drawing.Size(386, 29);
             this.romeinsGetal1.TabIndex = 4;
             this.romeinsGetal1.TextChanged += new System.EventHandler(this.romeinsGetal1_TextChanged);
             // 
@@ -99,7 +99,7 @@
             this.romeinsGetal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.romeinsGetal2.Location = new System.Drawing.Point(37, 169);
             this.romeinsGetal2.Name = "romeinsGetal2";
-            this.romeinsGetal2.Size = new System.Drawing.Size(166, 29);
+            this.romeinsGetal2.Size = new System.Drawing.Size(386, 29);
             this.romeinsGetal2.TabIndex = 5;
             this.romeinsGetal2.TextChanged += new System.EventHandler(this.romeinsGetal2_TextChanged);
             // 
@@ -136,7 +136,7 @@
             // buttonClear
             // 
             this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.Location = new System.Drawing.Point(349, 25);
+            this.buttonClear.Location = new System.Drawing.Point(582, 25);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 51);
             this.buttonClear.TabIndex = 10;
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 333);
+            this.ClientSize = new System.Drawing.Size(686, 333);
             this.Controls.Add(this.labelResultaat);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.labelAntwoord);
