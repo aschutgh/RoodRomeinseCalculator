@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+// Opdrachtenreeks rood
+// Romeinse rekenmachine
+// Voer romeinse getallen in in hoofdletters
+
+
 namespace RoodRomeinseCalculator
 {
     public partial class Form1 : Form
@@ -20,10 +26,11 @@ namespace RoodRomeinseCalculator
         int RomNum1 = 0;
         int RomNum2 = 0;
         int Resultaat = 0;
+        bool PreviousClickWasClear = false;
 
         private string NaarRomGet(int getal)
         {
-            if ((getal < 0) || (getal > 9000)) throw new ArgumentOutOfRangeException("Getal moet tussen 0 en 3000 liggen.");
+            //if ((getal < 0) || (getal > 9000)) throw new ArgumentOutOfRangeException("Getal moet tussen 0 en 3000 liggen.");
             if (getal < 1) return string.Empty;
             if (getal >= 1000) return "M" + NaarRomGet(getal - 1000);
             if (getal >= 900) return "CM" + NaarRomGet(getal - 900);
@@ -44,6 +51,7 @@ namespace RoodRomeinseCalculator
 
         private int NaarIntGet(string RomGet)
         {
+            //FIXME: recursief formuleren
             Dictionary<string, int> RomInvDig = new Dictionary<string, int>();
             RomInvDig.Add("CM", 900);
             RomInvDig.Add("CD", 400);
@@ -88,6 +96,11 @@ namespace RoodRomeinseCalculator
         private void UpdateView()
         {
             labelResultaat.Text = NaarRomGet(Resultaat);
+            //RomNum1 = 0;
+            //RomNum2 = 0;
+            //Resultaat = 0; // hoeft niet
+            //romeinsGetal1.Text = "";
+            //romeinsGetal2.Text = "";
         }
 
         private void romeinsGetal2_TextChanged(object sender, EventArgs e)
@@ -112,6 +125,18 @@ namespace RoodRomeinseCalculator
                     Resultaat = RomNum1 + RomNum2;
                     UpdateView();
                     break;
+                case "-":
+                    Resultaat = RomNum1 - RomNum2;
+                    UpdateView();
+                    break;
+                case "*":
+                    Resultaat = RomNum1 * RomNum2;
+                    UpdateView();
+                    break;
+                case "/":
+                    Resultaat = RomNum1 / RomNum2;
+                    UpdateView();
+                    break;
                 default:
                     break;
             }
@@ -120,7 +145,12 @@ namespace RoodRomeinseCalculator
 
         private void ClearClick(object sender, EventArgs e)
         {
-
+            RomNum1 = 0;
+            RomNum2 = 0;
+            Resultaat = 0;
+            labelResultaat.Text = "Resultaat";
+            romeinsGetal1.Clear();
+            romeinsGetal2.Clear();
         }
     }
 }
