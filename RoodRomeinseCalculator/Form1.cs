@@ -13,6 +13,8 @@ using System.Windows.Forms;
 // Romeinse rekenmachine
 // Voer romeinse getallen in in hoofdletters
 
+// FIXME: consequent Engels of Nederlands gebruiken
+
 
 namespace RoodRomeinseCalculator
 {
