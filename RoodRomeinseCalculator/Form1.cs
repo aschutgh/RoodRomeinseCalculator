@@ -51,7 +51,6 @@ namespace RoodRomeinseCalculator
         private int NaarIntGet(string RomGet)
         {
             RomGet = RomGet.ToUpper(); //FIXME: ergens anders neerzetten
-            bool CheckInvDig = false;
             if (RomGet.Length == 0) return 0;
             if (RomGet.Length >= 2)
             {
