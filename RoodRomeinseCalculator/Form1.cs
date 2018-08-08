@@ -52,6 +52,8 @@ namespace RoodRomeinseCalculator
         private int NaarIntGet(string RomGet)
         {
             //FIXME: recursief formuleren
+            RomGet = RomGet.ToUpper();
+
             Dictionary<string, int> RomInvDig = new Dictionary<string, int>();
             RomInvDig.Add("CM", 900);
             RomInvDig.Add("CD", 400);
