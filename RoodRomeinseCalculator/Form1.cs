@@ -26,7 +26,6 @@ namespace RoodRomeinseCalculator
         int RomNum1 = 0;
         int RomNum2 = 0;
         int Resultaat = 0;
-        bool PreviousClickWasClear = false;
 
         private string NaarRomGet(int getal)
         {
