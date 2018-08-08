@@ -150,8 +150,9 @@
             this.labelResultaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelResultaat.Location = new System.Drawing.Point(37, 255);
             this.labelResultaat.Name = "labelResultaat";
-            this.labelResultaat.Size = new System.Drawing.Size(0, 24);
+            this.labelResultaat.Size = new System.Drawing.Size(86, 24);
             this.labelResultaat.TabIndex = 11;
+            this.labelResultaat.Text = "Resultaat";
             // 
             // Form1
             // 
