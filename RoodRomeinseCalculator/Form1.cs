@@ -16,5 +16,25 @@ namespace RoodRomeinseCalculator
         {
             InitializeComponent();
         }
+
+        private void romeinsGetal2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void romeinsGetal1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OperatorClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
