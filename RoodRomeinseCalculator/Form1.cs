@@ -47,52 +47,33 @@ namespace RoodRomeinseCalculator
 
             return ("");
         }
-
+        
         private int NaarIntGet(string RomGet)
         {
-            //FIXME: recursief formuleren
-            RomGet = RomGet.ToUpper();
-
-            Dictionary<string, int> RomInvDig = new Dictionary<string, int>();
-            RomInvDig.Add("CM", 900);
-            RomInvDig.Add("CD", 400);
-            RomInvDig.Add("XC", 90);
-            RomInvDig.Add("XL", 40);
-            RomInvDig.Add("IX", 9);
-            RomInvDig.Add("IV", 4);
-
-            Dictionary<string, int> RomNums = new Dictionary<string, int>();
-            RomNums.Add("M", 1000);
-            RomNums.Add("D", 500);
-            RomNums.Add("C", 100);
-            RomNums.Add("L", 50);
-            RomNums.Add("X", 10);
-            RomNums.Add("V", 5);
-            RomNums.Add("I", 1);
-
-            int ToInt = 0;
-
-            foreach (string invdig in RomInvDig.Keys)
+            RomGet = RomGet.ToUpper(); //FIXME: ergens anders neerzetten
+            bool CheckInvDig = false;
+            if (RomGet.Length == 0) return 0;
+            if (RomGet.Length >= 2)
             {
-                if (RomGet.Contains(invdig) == true)
-                {
-                    ToInt += RomInvDig[invdig];
-                    string[] RomSplit;
-                    string[] sep = new string[] { invdig };
-                    RomSplit = RomGet.Split(sep, StringSplitOptions.None);
-                    RomGet = String.Join("", RomSplit);
-                }
+                if (RomGet.Substring(0, 2) == "CM") return 900 + NaarIntGet(RomGet.Substring(2));
+                if (RomGet.Substring(0, 2) == "CD") return 400 + NaarIntGet(RomGet.Substring(2));
+                if (RomGet.Substring(0, 2) == "XC") return 90 + NaarIntGet(RomGet.Substring(2));
+                if (RomGet.Substring(0, 2) == "XL") return 40 + NaarIntGet(RomGet.Substring(2));
+                if (RomGet.Substring(0, 2) == "IX") return 9 + NaarIntGet(RomGet.Substring(2));
+                if (RomGet.Substring(0, 2) == "IV") return 4 + NaarIntGet(RomGet.Substring(2));
             }
 
-            foreach (char c in RomGet)
-            {
-                string cs = c.ToString();
-                ToInt += RomNums[cs];
-            }
+            if (RomGet.Substring(0, 1) == "M") return 1000 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "D") return 500 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "C") return 100 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "L") return 50 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "X") return 10 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "V") return 5 + NaarIntGet(RomGet.Substring(1));
+            if (RomGet.Substring(0, 1) == "I") return 1 + NaarIntGet(RomGet.Substring(1));
 
-            return ToInt;
-
+            return 0;
         }
+
 
         private void UpdateView()
         {
