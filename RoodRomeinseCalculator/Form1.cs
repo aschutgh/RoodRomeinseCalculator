@@ -79,11 +79,6 @@ namespace RoodRomeinseCalculator
         private void UpdateView()
         {
             labelResultaat.Text = NaarRomGet(Resultaat);
-            //RomNum1 = 0;
-            //RomNum2 = 0;
-            //Resultaat = 0; // hoeft niet
-            //romeinsGetal1.Text = "";
-            //romeinsGetal2.Text = "";
         }
 
         private void romeinsGetal2_TextChanged(object sender, EventArgs e)
