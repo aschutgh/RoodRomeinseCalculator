@@ -11,7 +11,6 @@ using System.Windows.Forms;
 
 // Opdrachtenreeks rood
 // Romeinse rekenmachine
-// Voer romeinse getallen in in hoofdletters
 
 // FIXME: consequent Engels of Nederlands gebruiken
 
